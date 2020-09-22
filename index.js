@@ -13,8 +13,6 @@ docx.createReport({
     cmdDelimiter: ['${', '}']
 }).then(buffer => {
 
-fs.writeFileSync(path.resolve(__dirname,"report.docx"), buffer)
-
     libre.convert(buffer, ".pdf", undefined, (err, done) => {
         if (err) {
             console.log(`Error converting file: ${err.stack}`);
