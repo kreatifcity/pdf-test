@@ -10,7 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "docx-templates": "^4.5.0",
-    "dotenv": "^8.2.0",
-    "libreoffice-convert": "^1.1.2"
+    "libreoffice-convert": "git+https://github.com/kreatifcity/libreoffice-convert.git"
   }
 }
